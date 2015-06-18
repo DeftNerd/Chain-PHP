@@ -19,7 +19,7 @@ class Chain
         $blockchain = $testnet === true ? 'testnet3' : 'bitcoin';
 
         $client = new Client([
-            'base_url' => ["https://api.chain.com/{version}/{$blockchain}/", ['version' => 'v1']],
+            'base_url' => ["https://api.chain.com/{version}/{$blockchain}/", ['version' => 'v2']],
             'defaults' => [
                 'auth' => [$key, $secret],
             ]
